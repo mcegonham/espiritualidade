@@ -1,0 +1,50 @@
+<html>
+<meta charset="utf-8">
+
+<style>
+h1{color:orange; text-align:center;}
+p{color:#FF00FF; text-align:center;}
+
+/* Nova animação para a imagem rodar */
+img {
+  animation: rodarInfinito 5s linear infinite;
+  display: block;
+  margin: 0 auto; /* Centraliza a imagem na página */
+}
+
+@keyframes rodarInfinito {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+</style>
+
+<div id="demo"></div>
+
+<script>
+// Usando crases ( ` ) a string pode ter várias linhas à vontade
+demo.innerHTML += `<h1>Bar humilde da ilha de Faro.</h1>
+<p>ALEGANDO POESIA ESPIRITUAL.<br>
+Certo dia há ilha novamente cheguei,<br>
+desta vez numa nova missão,<br>
+inserida na fé, caridade e compaixão.<br>
+No acaso encontrei o senhor Paulo,<br>
+que me interligou em pura espiritualidade,<br>
+a duas senhoras com coração de verdade!<br>
+Num bar simples, encontrei a simplicidade!<br>
+Sem rejeições!<br>
+No coração e alma.<br>
+No bar da verdade,<br>
+encontrei duas senhoras.<br>
+Em alma e coração na originalidade!<br>
+Pura humildade.<br><br>
+<img src="https://images.trustinnews.pt/uploads/sites/5/2022/08/220811_DSC02183A-1600x1067.jpg" width="400" height="300"></p><br>`;
+
+const data = "<br> 19-05-2026 :<br>";
+
+demo.innerHTML += 'Seja feliz por favor' + data;
+</script>
+</html>
